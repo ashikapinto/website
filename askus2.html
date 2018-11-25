@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>Ask us</title>
+<link rel="icon" href="pgicon.jpg" type="image/jpg" sizes="16x16">
+<style>
+body {font-family: "Lucida", sans-serif;}
+
+form
+{
+    align:"center";
+}
+
+input[type=text], input[type=password],input[type=email], #mytext{
+    width: 40%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #E6E6FA;
+}
+
+
+button {
+    background-color: #A52A2A;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 15%;
+	height: 8%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+.bg-text {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 60%;
+  height:80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.bg-image {
+ 
+  background-image: url("img6.jpg");
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+ 
+  height: 100%; 
+  
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+
+</head>
+<body >
+<div class="bg-image"></div>
+<form action="home.html" id="ContactUs" method="post" >
+
+<div class="bg-text" >
+    <label for="name"><b>Name </b></label><br>
+    <input type="text" placeholder="Enter your name" name="name" required width="50%"><br>
+
+    <label for="email"><b>Email </b></label><br>
+    <input type="email" placeholder="Enter your email" name="email" required width="50%"><br>
+
+    <label for="phonenumber"><b>Phone number </b></label><br>
+    <input type="text" placeholder="Enter your phone number" name="phonenumber" required width="50%"><br>
+	
+	<label for="comments"><b>How can we assist you? </b></label><br>
+	<textarea id="mytext"  name="comments" placeholder="Ask us anything you want to know" rows="5" cols="90" style="width:40%;" required></textarea><br><br>
+	
+	
+	<br>
+
+	<button name="Submit" id="subm" />Enquire</button>
+	</form>
+	</div>
+<script type="text/javascript">
+<!--
+ 
+document.getElementById("subm").addEventListener("click",function(){alert("Message recieved, redirecting to home page...");})
+
+-->
+</script>
+	
+	
+	
+	
+	</body>
+ </html>
+ 

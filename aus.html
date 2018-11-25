@@ -1,0 +1,78 @@
+<html>
+<head>
+<style> 
+img {
+    width: 100px;
+    height: 100px;
+    -webkit-transition:  width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+    transition:  width 2s;
+}
+
+img:hover {
+    width: 300px;
+    height: 300px;
+}
+
+
+.column {
+    float: left;
+    width: 30%;
+    padding: 50px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+div.background {
+    background: url("another1.jpg");
+	background-repeat: no-repeat;
+  background-size: cover;
+    border: 2px solid black;
+}
+
+div.transbox {
+    margin: 50px;
+    background-color: transparent;
+    border: 1px solid black;
+    opacity: 1.0;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+body {
+    font-size: 18px;
+	font-family: "Times New Roman",cursive,serif;
+	color:#000000;
+}
+
+</style>
+</head>
+<body>
+<div class="background">
+ 	<div class="transbox">
+<div class="row">
+    <div class="column">
+<h1>Sydney</h1>
+<img src="sydney0.jpg"> </div>
+<div class="column">
+    <h1> Melbourne</h1>
+    <img src="mel0.jpg"></div>
+</div>
+<div class="row">
+    <div class="column">
+    <h1>Adelaide</h1>
+    <img src="ad0.jpg"></div>
+<div class="column">
+    <h1>Kangaroo Island</h1>
+    <img src="ki0.png"></div>
+</div>
+<div class="row">
+    <div class="column">
+    <h1>The Great Barrier Reef</h1>
+    <img src="gbf0.jpg"></div>
+
+</div>
+</div></div>
+</body>
+</html>
