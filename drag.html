@@ -1,0 +1,192 @@
+<html>
+<head>
+<style>
+.navbar {
+    font-size: 18px;
+	font-family: "Ariel", sans-serif;
+	color:#A9A9A9;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color:#000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #DC143C;
+}
+}
+body {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 14px;
+        font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+    }
+        
+    #wrap {
+       
+        margin: 0 auto;
+		
+    }
+        
+    #external-events {
+        float: left;
+        width: 250px;
+		height: 300px;
+        padding: 0 10px;
+        border: 1px solid #ccc;
+        background: #eee;
+        text-align: left;
+    }
+        
+    #external-events h4 {
+        font-size: 16px;
+        margin-top: 0;
+        padding-top: 1em;
+    }
+        
+    #external-events .fc-event {
+        margin: 10px 0;
+        cursor: pointer;
+    }
+        
+    #external-events p {
+        margin: 1.5em 0;
+        font-size: 13px;
+        color: #666;
+    }
+        
+    #external-events  p input {
+        margin: 0;
+        vertical-align: middle;
+    }
+
+    #calendar {
+        float: right;
+        width: 900px;
+    }
+ </style>
+<script type="text/javascript">
+		<!--
+		function func(){}
+			//var d1=document.getElementById("d1")
+			/*while((txt=prompt("enter text"))!="no")
+			{
+				var pnew=document.createElement("p")
+				pnew.innerText=txt;
+				pnew.setAttribute("class","pclass")
+				//alert("hi")
+				//var rem=document.getElementById("rem")
+				d1.insertBefore(pnew, d1.children[0])
+				//rem.parentNode.removeChild(rem)
+				//alert(rem.innerText)
+			}
+			var idx=parseInt(prompt("para to remove"));
+			var ch=d1.children[idx-1]
+			alert(ch.innerText)	
+			d1.removeChild(ch)*/
+			
+		document.addEventListener("drag", function(e){
+			e.target.style.opacity = "0.4"; 
+			e.preventDefault();})
+		document.addEventListener("dragenter", function(e){
+			e.preventDefault();})
+		document.addEventListener("dragleave", function(e){
+			e.preventDefault();})
+		document.addEventListener("dragover", function(e){
+			e.preventDefault();});
+		document.addEventListener("dragstart", function(e){
+			e.dataTransfer.setData("Text", e.target.id)});
+		document.addEventListener("drop", function(e) {
+			e.preventDefault(); 
+			var data = e.dataTransfer.getData("Text");
+			/*alert(data)*/
+			var p1=document.getElementById(data);			e.target.appendChild(p1);p1.style.opacity="1"
+			});
+		-->
+		</script>
+		</head>
+<body>
+<ul class="navbar">
+  <li>&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+
+  <li><a href="home.html"><b>Logout<b></a></li>
+  <li><a href="askus2.html"><b>Enquire<b></a></li>
+  <li><a href="aboutus2.html"><b>About us<b></a></li>
+  <li><a href="packages.html"><b>Home<b></a></li>
+  <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+  <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+  <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+  <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+  <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+  <li><img src="seren.jpg" width="90%" height="10%"></li>
+</ul>
+<center>
+
+<h1> Let's plan!</h1>
+<h2>Give us a few details and we'll keep the plan ready for you!</h2>
+
+<hr>
+<div id='wrap' >
+  
+        <div id='external-events'>
+          <div id='external-events-listing'>
+		  
+            <h2><Organize it your way.</h2>
+			<div id="d1">
+            <div id="rem" draggable="true" class='fc-event'>My Event 1</div>
+			</div>
+			<div id="d2">
+            <div id="rem" draggable="true" class='fc-event'>My Event 2</div>
+			</div>
+			<div id="d3">
+            <div id="rem" draggable="true" class='fc-event'>My Event 3</div>
+			</div>
+			<div id="d4">
+            <div id="rem" draggable="true" class='fc-event'>My Event 4</div>
+			</div>
+			
+			
+          </div>
+          
+        </div>
+		
+  <div id='external-events'>
+<div id='external-events-listing'>
+
+		<div 
+		id='external-events1'>
+		Day 1</div>
+
+		<div id='external-events2'>
+		Day 2</div>
+
+		<div id='external-events3'>
+		Day 3</div>
+
+		<div id='external-events4'>
+		Day 4</div>
+    </div>
+</div>
+</div>
+</center>
+</body>
+</html>

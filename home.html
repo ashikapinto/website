@@ -1,0 +1,214 @@
+
+<html>
+<head>
+<link rel="icon" href="pgicon.jpg" type="image/jpg" sizes="16x16">
+<title>Serendipity</title>
+<style>
+body {
+    font-size: 18px;
+	font-family: "Ariel", sans-serif;
+	color:#A9A9A9;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color:#000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #DC143C;
+}
+
+.active {
+    color: #DC143C;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#about{font-family:"Allan",cursive,sans-serif;
+	color:#808080;
+}
+#help{font-family:"Allan",cursive,sans-serif;
+	color:#808080;
+}
+
+#shake:hover {
+  animation: shake 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+</style>
+</head>
+<body>
+<ul>
+  <li>&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+
+  <li><a class="active" href="#home"><b>Home<b></a></li>
+  <li><a href="askus2.html"><b>Enquire<b></a></li>
+  <li><a href="aboutus2.html"><b>About us<b></a></li>
+  <li><a href="create.html"><b>Sign up<b></a></li>
+  <li><a href="login.html"><b>Login<b></a></li>
+  <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+  <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+  <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+  <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+  <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+  <li><img src="seren.jpg" width="90%" height="10%"></li>
+</ul>
+
+<div class="slideshow" >
+  <img class="mySlides" src="car.jpg" width="100%" height="90%">
+  <img class="mySlides" src="ok7.jpg" width="100%" height="90%" >
+  <img class="mySlides" src="ok3.jpg" width="100%" height="90%"> 
+  <img class="mySlides" src="ok4.jpg" width="100%" height="90%">
+  <img class="mySlides" src="ok9.jpg" width="100%" height="90%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";
+	
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+	
+}
+</script>
+<br>
+<br>
+<table>
+<caption style="color:black;"><h1><i>...Because money returns, time doesn't.<i></h1></caption>
+<tr>
+<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </td>
+<td><img id="shake" src="camping.jpg"></td>
+<td><img id="shake" src="trek.jpg"></td>
+<td><img id="shake" src="honeymoon.jpg"></td>
+<td><img id="shake" src="family.jpg"></td>
+<td><img id="shake" src="safari.jpg"></td>
+</tr>
+<tr align="center">
+<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </td>
+<td><b>CAMPING<b></td>
+<td><b>TREKS<b></td>
+<td><b>HONEYMOON PACKAGES<b></td>
+<td><b>FAMILY TOURS<b></td>
+<td><b>WILDLIFESAFARIS<b></td>
+</tr>
+</table>
+<br>
+<br><br>
+<br><br>
+
+<div class="marquee">
+<p> </p>
+</div>
+<br><br>
+<hr>
+<br>
+<br>
+<br><br>
+<hr>
+<br>
+<br>
+<p align="center" id="about">
+Serendipity is a specialist tour operator. We create private tailor-made journeys for adventurers and families that bring travel and places alive.<br><br>
+
+The art of mixology: We design itineraries that carefully blend relaxation with a genuine sense of independence, exploration & adventure.<br><br>
+
+The local touch: We are proud of our unique network of fantastic local guides who bring their destinations to life like no other.<br><br>
+
+The carefully chosen accommodation: We choose properties which reflect their location with lovingly designed spaces and warm welcoming hosts.<br><br>
+</p>
+<br><br>
+<hr>
+<br><br>
+<br><br>
+<p align="center" id="help">
+Other issues we can help you with!<br>
+We all live in an age that belongs to the young at heart. Life that is.
+</p>
+<table>
+<tr >
+<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </td>
+<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </td>
+<td><img src="car1.jpg"></td>
+<td><img src="food.jpg"></td>
+<td><img  src="cruise.jpg"></td>
+<td><img  src="hotel.jpg"></td>
+
+</tr>
+<tr align="center">
+<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </td>
+<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </td>
+<td><b>RENTING CARS<b></td>
+<td><b>FEATURED FOOD<b></td>
+<td><b>CRUISE BOOKING<b></td>
+<td><b>FINDING THE RIGHT HOTEL<b></td>
+
+</tr>
+
+</table>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br>
+<div>
+<img src="services.jpg" width="100%" height="90%">
+</div> 
+<footer background-color="#A9A9A9">
+<hr>
+<pre>
+<p >             					         <b>Download our App on<b>                            
+							<img src="playstore.jpg">
+							    <b>Follow us on<b>		   
+						<img src="socialmedia.jpg"></p></pre>
+</hr>
+</footer>
+</html>
+</body>
